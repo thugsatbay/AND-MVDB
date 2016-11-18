@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/movieBackground"
+    android:layout_margin="@dimen/fragment_home_linear_layout_margin"
+    android:id="@+id/movie_activity_frame">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/movie_container">
+
+    <ImageView
+        android:id="@+id/movie_background_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/fragment_home_linear_layout_margin"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:id="@+id/movie_text_layout">
+
+        <TextView
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/movieText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/movie_title"/>
+
+        <TextView
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/movieText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:id="@+id/movie_overview"/>
+
+    </LinearLayout>
+    
+
+</LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/movie_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_height="wrap_content"
+        />
+
+</FrameLayout>
