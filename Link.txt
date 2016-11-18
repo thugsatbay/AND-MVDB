@@ -1,0 +1,3 @@
+https://api.themoviedb.org/3/movie/550?api_key=0ffac534f18c20387c12c071460f72bd&append_to_response=releases,trailers
+
+https://www.youtube.com/watch?v=SUXWAEX2jlg
