@@ -181,7 +181,7 @@ public class HomeFragment extends Fragment {
                 pb.setVisibility(View.GONE);
                 //et.setVisibility(View.VISIBLE);
                 flagLoad=true;
-                Log.e(LOG_TAG,"Added all Movies to adapter "+adapter.getCount());
+                Log.i(LOG_TAG,"Added all Movies to adapter "+adapter.getCount());
                 Toast.makeText(homeFragmentContext,"New Theater Opened!",Toast.LENGTH_SHORT).show();
             }
         }
@@ -247,7 +247,7 @@ public class HomeFragment extends Fragment {
 
             try {
                 Uri ur = Uri.parse(base_url).buildUpon().appendQueryParameter(QUERY_KEY, APIkey).appendQueryParameter(QUERY_PRIMARY_YEAR, currentYear).appendQueryParameter(QUERY_YEAR, currentYear).appendQueryParameter(QUERY_PAGE,params[0]).build();
-                Log.e(LOG_TAG, ur.toString());
+                Log.i(LOG_TAG, ur.toString());
                 URL mvdburl = new URL(ur.toString());
                 httpurl=(HttpURLConnection)mvdburl.openConnection();
                 httpurl.setRequestMethod("GET");
@@ -322,7 +322,7 @@ public class HomeFragment extends Fragment {
                     try {
                         InputStream in = new java.net.URL(mv[i].getPoster_path()).openStream();
                         mv[i].setBitmap_poster(bp = BitmapFactory.decodeStream(in));
-                        Log.e(LOG_TAG, mv[i].getPoster_path() + " " + bp.getWidth());
+                        //Log.e(LOG_TAG, mv[i].getPoster_path() + " " + bp.getWidth());
 
                     } catch (Exception e) {
                         Log.e(LOG_TAG, e.getMessage());

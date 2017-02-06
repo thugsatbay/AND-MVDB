@@ -7,4 +7,12 @@
     <dimen name="fragment_home_linear_layout_margin">0dp</dimen>
     <dimen name="fragment_home_grid_view_margin">0dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="movie_details_text">15sp</dimen>
+    <dimen name="movie_title_text">20sp</dimen>
+    <dimen name="movie_tag_text">13sp</dimen>
+    <dimen name="movie_center_text_padding">4sp</dimen>
+    <dimen name="movie_text_padding">8sp</dimen>
+    <dimen name="movie_inner_text_padding">8sp</dimen>
+    <dimen name="movie_info_text">4sp</dimen>
+    <dimen name="movie_genre_padding">10sp</dimen>
 </resources>

@@ -14,7 +14,7 @@ public class MovieIDProvider {
     public static final String name_backdrop_path="backdrop_path";
     private String budget;
     public static final String name_budget="budget";
-    private String[][] genres;
+    private String[] genres;
     public static final String name_genres="genres";
     private String homepage;
     public static final String name_homepage="homepage";
@@ -202,11 +202,11 @@ public class MovieIDProvider {
         this.homepage = homepage;
     }
 
-    public String[][] getGenres() {
+    public String[] getGenres() {
         return genres;
     }
 
-    public void setGenres(String[][] genres) {
+    public void setGenres(String[] genres) {
         this.genres = genres;
     }
 

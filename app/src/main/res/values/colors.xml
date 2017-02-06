@@ -5,6 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorText">#FFFFFF</color>
     <color name="movieText">#121212</color>
+    <color name="colorBlack">#121212</color>
     <color name="movieBackground">#FFFFFF</color>
     <color name="colorHint">#AAAAAA</color>
     <color name="colorBorder">#E5E5E5</color>
